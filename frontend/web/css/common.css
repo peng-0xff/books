@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+
+/***************顶部菜单开始*************/
+.topMenu{
+	width:100%;
+	height:40px;
+	background-color:#F8F8F8;
+	border-bottom:1px solid #CCC;
+	line-height:40px;
+}
+.topNav{
+	width:1208px;
+	margin:0 auto;
+}
+.leftNav{
+	float:left;
+}
+.rightNav{
+	float:right;
+}
+.topMenu a{
+	margin-left:8px;
+	margin-right:8px;
+	color:#333333;
+}
+.topMenu a:hover{
+	color:#F00;
+}
+/***************顶部菜单结束*************/
+
+/***************中间logo和搜索开始*************/
+.logo_search{
+	width:1208px;
+	height:115px;
+	margin:0 auto;
+/*	border-bottom:#00670C 3px solid;*/
+}
+.logo{
+	width:50%;
+	height:115px;
+	float:left;
+	line-height:115px;
+}
+.logo img{
+	height: 89px;
+    margin: 13px 0;
+    vertical-align: middle;
+    width: 308px;
+}
+
+
+i {
+    background: #d6d6d6 none repeat scroll 0 0;
+    display: inline-block;
+    height: 45px;
+	vertical-align: middle;
+    width: 1px;
+}
+.logo span{
+	padding:15px;
+	font-size:14px;
+}
+
+
+
+
+/*Login登录的css*/
+#Login{
+	width:600px; height:350px; background:#fff;
+	box-shadow:0 0 10 #000; position:fixed;
+	z-index:9999; display:none;
+	border:1px solid #000;
+}
+#Login #title{
+	height:50px; background:#ff7f00; color:#fff;
+	font-size:18px; font-family:"微软雅黑";
+	text-indent:35px; line-height:50px;
+	cursor:move;
+}
+#Login #title a{width:17px; height:18px; display:inline-block;
+	background:#CCC; float:right; margin:15px 10px 0px 0px;
+	background:url(../image/login_bg.png) no-repeat -2px;
+}
+#Login p.des{
+	font-size:14px; color:#666; font-family:"微软雅黑";
+	margin:20px; line-height:30px;	
+}
+#LgCon{ width:305px; height:175px; margin:0px auto;}
+#LgCon p.txt{ font-size:16px; font-family:"微软雅黑";
+	color:#000; margin-bottom:15px;
+ }
+#LgCon p.txt input{ height:35px; width:260px; margin-left:5px;
+ 
+	border:1px solid #ddd; border-radius:5px;
+}
+#LgCon p.ck{ font-size:14px; font-family:"微软雅黑"; text-indent:35px;
+}
+#LgCon p.ck a{ float:right;}
+#LgCon p.but{ text-indent:35px; margin-top:15px;}
+#LgCon p.but input{ width:263px; height:40px;
+}
+.Layer{
+	width:100%; height:100%;
+	position:fixed; top:0; right:0;
+	background:#333;
+	filter:Alpha(opacity=60); -moz-opacity:0.6; opacity:0.6;
+	z-index:3333; display:none;
+}
+/*Login登录的css结束*/
+
+.search{
+	width:50%;
+	height:115px;
+	float:right;
+	overflow:hidden;
+}
+#main_serach{
+	padding-top:16px;
+}
+#main_serach a{
+	display:inline-block;
+	width:50px;
+	height:30px;
+	text-align:center;
+	font-weight:bold;
+	margin-right:5px;
+	line-height:30px;
+}
+#main_serach a:hover{
+	color:#000;
+}
+.main_serachbg{
+	background-color:#00661C;
+	border-radius:3px;
+	color:#FFF;
+}
+#main_serach a.main_serachbg{
+	color:#FFF;
+}
+.search_area{
+	margin-top:-2px;
+}
+#skeyword{
+	width:450px;
+	height:29px;
+	border: 2px solid #00670C;
+	padding-left:18px;
+	background:url(../image/search_ico.png) no-repeat 2px 10px;
+}
+.search_button{
+	width:70px;
+	height:35px;
+	color:#FFF;
+	background-color:#00661C;
+	cursor:pointer;
+	margin-left:-8px;
+	border:none;
+}
+.search_word{
+	height:36px;
+	line-height:36px;
+}
+.search_word a{
+	margin-right:8px;
+}
+/***************中间logo和搜索结束*************/
+
+/***************菜单栏开始*************/
+.menubg{
+	width:100%;
+	height:80px;
+	border-top: 3px solid #00670C;
+	-moz-box-shadow: 0px 18px 6px #EDEDED; /* 老的 Firefox */
+	box-shadow: 0px 18px 6px #EDEDED;
+}
+.menu{
+	width:1208px;
+	height:80px;
+	margin:0 auto;
+}
+.menu ul li{
+	float:left;
+	width:288px;
+}
+.menu ul li a{
+	display:inline-block;
+	width:288px;
+	line-height:80px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+}
+.menu_acolor{
+	color:#F00;
+}
+/*.menu ul li a:hover{
+	font-size:18px;
+}*/
+/***************菜单栏结束*************/
+/***************header结束*************/
+
+/***************footer开始*************/
+.footer{
+	width:100%;
+	background-color:#F1F1F1;
+	border-top: 1px solid #bababa;
+}
+.footerNew{
+	width:1208px;
+	height:160px;
+	margin:0 auto;
+	padding:5px 0px;
+}
+.weima{
+	float:left;
+}
+.weima h5{
+	text-indent:5px;
+	font-size:14px;
+	color:#106B1C;
+	line-height:30px;
+	font-weight:bolder;
+}
+.footer_tel{
+	float:left;
+	padding-left:125px;
+	line-height:32px;
+	padding-right:46px;
+}
+.footer_tel p{
+	color:#333333;
+	font-size:14px;
+	font-weight:bolder;
+}
+.footer_tel p span{
+	color:#106B1C;
+}
+.footer_ul{
+	float:left;
+	border-left:1px solid #DDDDDD;
+}
+.footer_ul ul li{
+	padding:0px 90px;
+	text-align:center;
+	border-right:#DDDDDD;
+	line-height:32px;
+}
+.footer_ul ul span{
+	color:#333333;
+	font-size:14px;
+	font-weight:bolder;
+	line-height:32px;
+	padding-left:100px;
+	background:url(../image/help-ico.png) no-repeat 80px 3px;
+}
+.footer_ul ul span.footer_ulTwo{
+	background:url(../image/help-ico.png) no-repeat 80px -16px;
+}
+.footer_ul ul span.footer_ulThree{
+	background:url(../image/help-ico.png) no-repeat 80px -36px;
+}
+.copyright{
+	width:100%;
+	border-top:1px  solid #DDDDDD;
+	text-align:center;
+	line-height:40px;
+}
+/***************footer结束*************/
+

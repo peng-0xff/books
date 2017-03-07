@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+.cartCen{
+	width:1200px;
+	margin:15px auto 10px;
+	overflow:hidden;
+}
+.gwc {
+    clear: both;
+    overflow: hidden;
+    width: 1200px;
+}
+.gwc_tb1 {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-top: 1px solid #dddddd;
+    box-shadow: 0 5px 10px #eaeaea;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 100%;
+	height:50px;
+	line-height:50px;
+}
+.tb1_td1 {
+    text-align: center;
+    width: 35px;
+}
+.tb1_td3 {
+    text-align: center;
+    width: 290px;
+}
+
+.tb1_td4 {
+    text-align: center;
+    width: 260px;
+}
+
+.tb1_td5 {
+    text-align: center;
+    width: 115px;
+}
+
+.tb1_td6 {
+    text-align: center;
+    width: 135px;
+}
+.tb1_td7 {
+    text-align: center;
+}
+.gwc_tb2 {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #dcdcdc;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+	font-weight:bolder;
+}
+
+.gwc_tb2 td.shopname {
+    border-bottom: 1px solid #dddddd;
+    color: #666;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 1em;
+}
+.tb2_td1 {
+    text-align: center;
+    width: 60px;
+}
+.tb2_td2 {
+    padding: 8px 0;
+    text-align: center;
+    width: 100px;
+}
+.tb2_td2 img {
+    border: 1px solid #dddddd;
+    height: 96px;
+    width: 96px;
+}
+.tb2_td3 {
+    padding-left: 12px;
+    padding-right: 18px;
+    width: 170px;
+}
+
+.tb2_td3 a {
+    font-size: 14px;
+    line-height: 22px;
+}
+.tb1_td4 {
+    text-align: center;
+    width: 260px;
+}
+
+.tb1_td5 {
+    text-align: center;
+    width: 115px;
+}
+
+.tb1_td6 {
+    text-align: center;
+    width: 135px;
+}
+
+.tb1_td7 {
+    text-align: center;
+}
+
+.gwc_tb3 {
+    background: #e7e7e7 none repeat scroll 0 0;
+    border: 1px solid #d2d2d2;
+    height: 46px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.gwc_tb3 tr td {
+    font-size: 14px;
+}
+
+.tb1_td1 {
+    text-align: center;
+    width: 35px;
+}
+.tb3_td2 {
+    text-align: center;
+    width: 100px;
+}
+
+.GoBack_Buy a {
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    float: right;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    width: 100px;
+}
+.tb3_td3 {
+    text-align: center;
+    width: 220px;
+}
+
+.tb3_td3 span {
+    font-size: 18px;
+    font-weight: bold;
+}
+.tb3_td4 {
+    text-align: center;
+    width: 110px;
+}
+.tb3_td4 a.jz2 {
+    background: #FF0000 none repeat scroll 0 0;
+    color: #FFF;
+    display: block;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    width: 100px;
+}

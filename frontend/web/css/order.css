@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+
+
+/***************头部食物选择区域开始*************/
+.fChoice{
+	width:1198px;
+	margin:0 auto;
+	margin-top:15px;
+	border:1px solid #DDDDDD;
+	overflow:hidden;
+}
+.fChoice ul li{
+	height:42px;
+	border-bottom: 1px dashed #eee;
+	padding-left:40px;
+}
+.fChoice ul li dl dt{
+	float:left;
+	padding:3px 5px;
+	margin-top:7px;
+	
+}
+.fChoice ul li dl dd{
+	float:left;
+	padding:3px 5px;
+	margin-right:20px;
+	border-radius:2px;
+	margin-top:7px;
+}
+.fChoice ul li dl dd a:hover{
+	color:#333333;
+}
+.fChoice ul li dl dd.fChoice_bg{
+	background-color:#FF6600;
+}
+.fChoice ul li dl dd.fChoice_bg a{
+	color:#FFF;
+}
+.fChoice_bgtwo{
+	background-color:#F3EDC2;
+}
+.clear{
+	clear:both;
+}
+.fChoice ul li.end_choice{
+	border:none;
+}
+.fChoice ul li.sort{
+	padding-left:0px;
+	line-height:45px;
+	border-top:1px solid #DDDDDD;
+}
+.fChoice ul li.sort a{
+	display:inline-block;
+	height:45px;
+	padding:0px 25px;
+	color:#000;
+	border-right:1px solid #DDDDDD;
+	background:url(../image/s-down.png) no-repeat 10px 15px ;
+}
+.fChoice ul li.sort a.sort_nobg{
+	background:none;
+}
+/***************头部食物选择区域结束*************/
+
+/***************尾部订餐选择区开始*************/
+
+.Fsl{
+	width:1200px;
+	margin:10px auto;
+	overflow:hidden;
+}
+.Fsl ul.flist{
+	width:890px;
+	float:left;
+}
+.Fsl ul.flist li{
+	position:relative;
+	padding:2px;
+	float:left;
+	border:1px solid #DDDDDD;
+	margin-right:10px;
+	margin-bottom:10px;
+	_margin-right:5px;
+}
+.Fsl ul.flist li a img{
+	width:428px;
+	height:280px;
+}
+.Fsl ul.flist li h5{
+	font-size:16px;
+	color:#000;
+	font-weight:bolder;
+	line-height:40px;
+}
+.Fsl ul.flist li p{
+	line-height:32px;
+	font-size:14px;
+	padding-left:5px;
+}
+.Fsl ul.flist li p span{
+	margin-left:20px;
+	color:#F95F1F;
+	font-weight:bolder;
+	font-size:24px;
+}
+.Fsl ul.flist li p a{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	background-color:#F76220;
+	padding:5px 40px;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bolder;
+}
+.shopList{
+	width:308px;
+	float:right;
+	border:1px solid #DDDDDD;
+}
+.shopList h5{
+	height:45px;
+	line-height:45px;
+	font-size:16px;
+	font-weight:700;
+	color:#000;
+	text-indent:20px;
+}
+.shopList ul li{
+	position:relative;
+	padding:5px;
+	border-top:1px solid #DDDDDD;
+}
+.shopList ul li a img{
+	width:298px;
+	height:220px;
+}
+.shopList ul li p{
+	line-height:34px;
+	font-size:14px;
+}
+.shopList ul li p span{
+	position:absolute;
+	right:10px; 
+	bottom:5px;
+	_top:270px;
+	color:#F8601F;
+	font-size:18px;
+	font-weight:bolder;
+}
+/***************尾部订餐选择区结束*************/
+/***************尾部分页开始*************/
+
+.fpage{
+	width:1200px;
+	margin:0 auto 20px;
+	text-align:center;
+}
+.fpage a {
+	padding:5px 15px;
+	border:1px solid #DDDDDD;
+}
+.fpage a:hover{
+	color:#000;
+}
+.fpage a.one b{
+	border-bottom: 5px solid #ffffff;
+    border-right: 5px solid #d8d8d8;
+    border-top: 5px solid #ffffff;
+	display:inline-block;
+	margin-right:5px;
+}
+.fpage a.two b{
+	border-bottom: 5px solid #ffffff;
+    border-left: 5px solid #d8d8d8;
+    border-top: 5px solid #ffffff;
+	display:inline-block;
+	margin-left:5px;
+}
+/***************尾部分页结束*************/

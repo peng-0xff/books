@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+/*------------------灰色背景---------------*/
+.Laye{
+	width:100%; height:100%;
+	background:#333;
+	filter:Alpha(opacity=60); -moz-opacity:0.6; opacity:0.6;
+	z-index:3333px;
+	position:fixed;
+	top:0px; left:0px;
+	display:none;
+}
+.adrbox {
+    background-color: white;
+    border: 2px solid #dddddd;
+    height: 264px;
+    left: 15%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    position: fixed;
+    top: 25%;
+    width: 950px;
+    z-index: 9999;
+	display:none;
+}
+.adrbox li {
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+}
+.adrbox li span {
+    float: left;
+    text-align: right;
+    width: 108px;
+}
+.adrbox li p {
+    float: left;
+    text-align: left;
+    width: 800px;
+}
+.adrbox li p em {
+    font-style: normal;
+    padding: 0 8px;
+}
+.adrbox li textarea {
+    border: 1px solid #c1c1c1;
+    height: 85px;
+    padding: 5px;
+    width: 585px;
+}
+.adrbox li input {
+    border: 1px solid #c1c1c1;
+    padding: 5px;
+}
+.button-a {
+    padding: 0 0 0 138px;
+}
+.button-a .C-button {
+    background: #0066ff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px 20px;
+}
+.button-a .Cancel-b {
+    background: #dedede none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+
+.userCtenter{
+	width:1200px;
+	margin:15px auto 10px;
+	overflow:hidden;
+}
+.user_list{
+	width:270px;
+	float:left;
+	border:1px solid #CCCCCC;
+	border-top:5px solid #00670C;
+	padding:0px 5px;
+	background-color:#F8F8F8;
+}
+.user_list ul li{
+	line-height:45px;
+	height:45px;
+	font-size:14px;
+	font-weight:bolder;
+	border-bottom:1px dotted #dddddd;
+}
+.user_list ul li b{
+	border-bottom:5px solid #FFF;
+	border-left:5px solid #F00;
+	border-top:5px solid #fff;
+	display:inline-block;
+	margin:0px 10px;
+}
+
+.message{
+	width:900px;	
+	float:right;
+}
+.adress h5{
+	line-height:40px;
+	font-size:16px;
+	font-weight:bolder;
+	color:#F00;
+	border-bottom:1px solid #dddddd;
+}
+.adress form{
+	margin-top:15px;
+	width:700px;
+	background-color:#F5F8FA;
+	padding-left:200px;
+}
+.adress form label{
+	width:100px;
+	float:left;
+	text-align:right;
+	font-size:14px;
+	font-weight:bolder;
+	line-height:30px;
+}
+.adress form select, .adress form input{
+	height:30px;
+	font-size:14px;
+}
+.adress form input.longadress{
+	width:400px;
+}
+.adress form input.btone{
+	margin-left:100px;
+}
+.adress form input.bttwo{
+	margin-left:20px;
+}
+
+
+
+

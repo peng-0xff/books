@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+
+.userCtenter{
+	width:1200px;
+	margin:15px auto 10px;
+	overflow:hidden;
+}
+.user_list{
+	width:270px;
+	float:left;
+	border:1px solid #CCCCCC;
+	border-top:5px solid #00670C;
+	padding:0px 5px;
+	background-color:#F8F8F8;
+}
+.user_list ul li{
+	line-height:45px;
+	height:45px;
+	font-size:14px;
+	font-weight:bolder;
+	border-bottom:1px dotted #dddddd;
+}
+.user_list ul li b{
+	border-bottom:5px solid #FFF;
+	border-left:5px solid #F00;
+	border-top:5px solid #fff;
+	display:inline-block;
+	margin:0px 10px;
+}
+
+.message{
+	width:900px;	
+	float:right;
+}
+.user h5{
+	line-height:40px;
+	font-size:16px;
+	font-weight:bolder;
+	color:#F00;
+	border-bottom:1px solid #dddddd;
+}
+.user_pic{
+	border:1px solid #dddddd;
+	background-color:#F5F8FA;
+	overflow:hidden;
+	margin-top:15px;
+}
+.user_pic img {
+   border-radius: 50%;
+    height: 80px;
+    width: 80px;
+	padding:10px 15px;
+	display:block;
+	float:left;
+}
+.user_pic p{
+	line-height:36px;
+    line-height: 30px;
+    margin-left: 15px;
+}
+.user_pic p.ptitle{
+	padding-top:10px;
+	font-size:14px;
+	font-weight:bolder;
+}
+.user_pic p a{
+	color:#F00;
+	margin:0px 5px;
+}
+.reminder{
+	width:898px;
+	border:1px solid #dddddd;
+	overflow:hidden;
+}
+.reminder ul li{
+	float:left;
+	height:50px;
+	line-height:50px;
+	font-size:14px;
+	font-weight:bolder;
+	padding:0px 40px;
+	border-right:1px solid #dddddd;
+}
+.reminder ul li.last{
+	border:none;
+}

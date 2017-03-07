@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+
+.shop{
+	width:1200px;
+	margin:10px auto;
+	overflow:hidden;
+}
+.shopL{
+	float:left;
+	width:898px;
+	border:1px solid #dddddd;
+}
+.shopR{
+	float:right;
+	width:288px;
+	margin-left:10px;
+	border:1px solid #dddddd;
+}
+.shopTitle{
+	height:90px;
+	padding-left:50px;
+	overflow:hidden;
+	line-height:90px;
+	border-bottom:1px solid #dddddd;
+}
+.Timg{
+	height:90px;
+	float:left;
+}
+.Timg img{
+	width:70px;
+	height:70px;
+	border:1px solid #dddddd;
+	border-radius:50%;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.shopTitle span{
+	padding-left:20px;
+	font-size:20px;
+	color:#00AC40;
+	font-weight:bolder;
+}
+.bbox{
+	overflow:hidden;
+}
+.shopImg{
+	width:445px;
+	padding-left:5px;
+	padding-top:15px;
+	overflow:hidden;
+	float:left;
+}
+.bigImg{
+	width:438px;
+	height:308px;
+	border:1px solid #dddddd;
+}
+.bigImg img{
+	width:432px;
+	height:302px;
+	padding:3px;
+}
+.smallImg ul li{
+	float:left;
+}
+.smallImg ul li img{
+	width:80px;
+	height:63px;
+	border:1px solid #dddddd;
+	margin:5px 5px 5px 0px;
+	cursor:pointer;
+}
+.smallImg_bg{
+	border:1px solid #F00;
+}
+.shopInfo{
+	padding-top:15px;
+	float:left;
+	padding-left:15px;
+	width:425px;
+}
+.shopInfo p{
+	line-height:34px;
+	font-size:14px;
+	border-bottom:1px dotted #dddddd;
+}
+.shopInfo p span{
+	font-size:14px;
+	font-weight:bolder;
+}
+.shopInfo input{
+	width:180px;
+	height:44px;
+	border-radius:5px;
+	background:#F7753B;
+	font-size:14px;
+	color:#FFF;
+	margin-top:15px;
+	margin-bottom:10px;
+}
+.xinxi{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	border-bottom:1px solid #dddddd;
+	border-top:1px solid #dddddd;
+	position:relative;
+}
+.xinxi p{
+	width:130px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bolder;
+	color:#000;
+	float:left;
+	cursor:pointer;
+}
+.p_border{
+	width:130px;
+	height:3px;
+	background:#FF6600;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+.intro{
+	width:100%;
+	overflow:hidden;
+}
+.intro ul li{
+	width:100%;
+	display:none;
+}
+.botPic{
+	width:215px;
+	float:left;
+	text-align:center;
+	line-height:26px;
+	background:#F1F1F1;
+	margin:10px 3px;
+	border:1px solid #dddddd;
+}
+.botPic span{
+	display:inline-block;
+	width:100%;
+	border-top:1px dotted #CCC;
+}
+.botPic img{
+	width:215px;
+	height:150px;
+}
+.borderbg{
+	border:1px solid #F00;
+}
+.plun{
+	width:100%;
+	border-bottom:1px solid #dddddd;
+	overflow:hidden;
+}
+.intro ul li.litwo p{
+	float:left;
+}
+
+.intro ul li.litwo p.pone{
+	width:170px;
+	height:110px;
+	text-align:center;
+	line-height:110px;
+	color:#996600;
+	font-size:14px;
+}
+.intro ul li.litwo p.ptwo{
+	padding-top:20px;
+	width:525px;
+	height:90px;
+	line-height:24px;
+}
+.intro ul li.litwo p.pthree{
+	padding-top:20px;
+	color:#000;
+	
+}
+.intro ul li.lithree p{
+	line-height:30px;
+	font-size:14px;
+}
+.intro ul li.lithree p span{
+	font-weight:bolder;
+}
+.intro ul li label{
+	font-size:12px;
+	font-weight:bolder;
+	padding:10px 0px;
+	display:inline-block;
+	width:120px;
+	text-align:right;
+}
+.intro ul li input{
+	width:160px;
+	height:34px;
+	border:1px solid #dddddd;
+	margin:10px 0px;
+	color:#999;
+}
+.intro ul li textarea{
+	width:500px;
+	height:200px;
+}
+.intro ul li input.inputEnd{
+	width:100px;
+	height:40px;
+	margin-left:120px;
+	color:#000;
+	font-weight:bolder;
+	background:#FFF;
+	border:1px solid #dddddd;
+}
+.rTitle{
+	height:40px;
+	line-height:40px;
+	padding-left:20px;
+	font-size:14px;
+	font-weight:bolder;
+	color:#000;
+	background:#FAFAFA;
+	border-bottom:1px solid #dddddd;
+}
+.rCon{
+	padding:10px;
+	overflow:hidden;
+	border-bottom:1px dotted #dddddd;
+}
+.rCon span{
+	color:#01AC42;
+}
+.rCon img{
+	float:left;
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	margin-right:10px;
+}
+

@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+.dcent{
+	width:1200px;
+	margin:20px auto;
+	overflow:hidden;
+}
+.adr{
+	width:1200px;
+	overflow:hidden;
+}
+.adrTltle{
+	padding-left:10px;
+	width:1190px;
+	background:#F1F1F1;
+	border-top:2px solid #CCCCCC;
+	font-size:16px; 
+	font-weight:bolder;
+	line-height:34px;
+}
+adr ul.address {
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 8px 0;
+    width: 1200px;
+}
+.address li {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+}
+.address li input {
+    border: 1px solid #c1c1c1;
+    padding: 5px;
+}
+.address li span {
+    color: #666;
+}
+.libg{
+	 background-color: rgb(255, 245, 204);
+	 border: 1px solid rgb(255,229, 128);
+}
+
+/*                       灰色背景                       */
+.Laye{
+	width:100%; height:100%;
+	background:#333;
+	filter:Alpha(opacity=60); -moz-opacity:0.6; opacity:0.6;
+	z-index:3333px;
+	position:fixed;
+	top:0px; left:0px;
+	display:none;
+}
+.adrbox {
+    background-color: white;
+    border: 2px solid #dddddd;
+    height: 264px;
+    left: 15%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    position: fixed;
+    top: 25%;
+    width: 950px;
+    z-index: 9999;
+	display:none;
+}
+.adrbox li {
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+}
+.adrbox li span {
+    float: left;
+    text-align: right;
+    width: 108px;
+}
+.adrbox li p {
+    float: left;
+    text-align: left;
+    width: 800px;
+}
+.adrbox li p em {
+    font-style: normal;
+    padding: 0 8px;
+}
+.adrbox li textarea {
+    border: 1px solid #c1c1c1;
+    height: 85px;
+    padding: 5px;
+    width: 585px;
+}
+.adrbox li input {
+    border: 1px solid #c1c1c1;
+    padding: 5px;
+}
+.button-a {
+    padding: 0 0 0 138px;
+}
+.button-a .C-button {
+    background: #0066ff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px 20px;
+}
+.button-a .Cancel-b {
+    background: #dedede none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+.pay_delivery {
+    height: auto;
+    overflow: hidden;
+    padding: 8px 0;
+    width: 1200px;
+}
+.flow_title {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-top: 2px solid #cccccc;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 8px;
+}
+
+.pay_delivery table {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.pay_delivery table tr {
+    line-height: 35px;
+}
+
+.pay_delivery table th {
+    border-bottom: 1px dotted #dddddd;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 35px;
+	text-align:left;
+}
+
+.pay_delivery ul {
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.pay_delivery li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 142px;
+}
+.pay_delivery li input {
+    margin: 0 10px;
+    vertical-align: super;
+}
+
+.pay_delivery li .alipay {
+    background: rgba(0, 0, 0, 0) url(../image/bank.png) no-repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    display: inline-block;
+    height: 25px;
+    width: 90px;
+}
+
+.flow_title {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-top: 2px solid #cccccc;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 8px;
+}
+
+.inforlist table {
+    border-bottom: 1px solid #dddddd;
+    width: 1200px;
+}
+
+.inforlist table tr {
+    border-bottom: 1px solid #dddddd;
+    line-height: 35px;
+}
+
+.inforlist table th {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-bottom: 1px dotted #dddddd;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 35px;
+    padding: 0 8px;
+	text-align:left;
+}
+
+.inforlist table td {
+    padding: 0 8px;
+}
+
+.Order_M {
+    float: left;
+    height: auto;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.Order_M p {
+    line-height: 35px;
+    text-align: right;
+}
+
+.Order_M p em {
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+    width: 120px;
+}
+
+.Order_M p input {
+    border: 1px solid #dddddd;
+    padding: 5px 8px;
+    width: 600px;
+}
+
+.inforlist .Sum_infor {
+    float: right;
+    margin-top: 15px;
+}
+
+.inforlist .Sum_infor .p1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inforlist .Sum_infor .p2 span {
+    color: #f00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.inforlist .Sum_infor .p3button {
+    background: #ff0000 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 15px;
+    text-align: center;
+    width: 120px;
+}

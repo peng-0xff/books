@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+.register{
+	width:500px;
+	margin:30px auto ;
+	overflow:hidden;
+}
+.one { margin:10px 0;}
+.one label { width:100px;float:left; text-align:right; height:20px; line-height:20px;}
+.one input { border:1px solid #ccc; height:20px;}
+.two { padding-left:100px;}
+.reda { color:red;}
+.a2 { width:100px; margin-left:5px; padding:2px; background:#ccc;}
+.error { background:#ccc url(../image/error.gif) no-repeat 0px -2px; padding-left:25px; padding-right:3px;}
+.righta { background:#ccc url(../image/righta.gif) no-repeat 0px -2px; padding-left:25px; padding-right:3px;}

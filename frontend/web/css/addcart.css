@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dt,dd /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend,/* form elements 表单元素 */ th, td, /* table elements 表格元素 */ img/* img elements 图片元素 */ {
+	border: medium none;
+	margin: 0;
+	padding: 0;
+}
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+	font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+em {
+	font-style: normal;
+}
+/** 重置列表元素 **/
+ul, ol {
+	list-style: none;
+}
+/** 重置超链接元素 **/
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #F40;
+}
+/** 重置图片元素 **/
+img {
+	border: 0px;
+}
+/** 重置表格元素 **/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	color: #333;
+}
+.sheel {
+	width: 100%;
+	overflow: hidden;
+}
+/***************重置结束*************/
+.food-hd, .food-bt{
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+	overflow:hidden;
+}
+.food-hd{
+	margin:15px auto 10px;
+	border:1px solid #dddddd;
+}
+.food-img{
+	float: left;
+    height: auto;
+    width: 425px;
+	padding:5px;
+}
+.food-img img.img-big{
+	width:425px;
+	height:302px;
+}
+.food-img ul li{
+	margin:6px 8px 0px 0px;
+	float:left;
+	cursor:pointer;
+}
+.food-img ul li img{
+	width:80px;
+	height:60px;
+	border:1px solid #dddddd;
+}
+.food-img ul li img.imgbdc{
+	border-color:#F00;
+}
+.food-bt{
+	margin:0px auto 15px;
+}
+.foot-text{
+	width:558px;
+	height:302px;
+	float: left;
+    font-size: 13px;
+    height: 302px;
+    margin:15px 0px 10px 10px;
+    width: 558px;
+}
+.food_name{
+	border-bottom: 1px dotted #dddddd;
+    line-height: 25px;
+    padding: 0;
+}
+.food_name h1{
+	font-size: 18px;
+    font-weight: bold;
+}
+.food_name p{
+	 color: #aaaaaa;
+}
+.price_a{
+	background: rgba(0, 0, 0, 0) url(../image/ddprice_bg.gif) repeat scroll 0 0 / cover ;
+    border-bottom: 1px dotted #dddddd;
+    padding: 0;
+}
+.price_a p.price01{
+	padding-left:15px;
+	height: 50px;
+    line-height: 50px;
+}
+.price_a p.price01 span{
+	color: #f65602;
+    font-size: 36px;
+    font-weight: bold;
+}
+.price_a p.price02{
+	padding-left:15px;
+	height: 40px;
+    line-height: 40px;
+}
+.peisong{
+	line-height: 40px;
+}
+.peisong span{
+	color: #333333;
+}
+.peisong span b {
+    font-style: normal;
+    margin: 0 8px;
+}
+.Tran_infor {
+    border-bottom: 1px dotted #dddddd;
+    border-top: 1px dotted #dddddd;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.Tran_infor li {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    width: 33%;
+}
+.Tran_infor li p {
+    text-align: center;
+}
+.Tran_infor li.p.Numerical {
+    color: #b77e5e;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Tran_infor li.line {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.BuyNo{
+	height:60px;
+	line-height:60px;
+}
+.BuyNo span input{
+	border: 1px solid #dddddd;
+    margin: 0 15px;
+    padding: 5px;
+    width: 60px;
+}
+.Buybutton {
+    margin: 10px 0;
+}
+.Buybutton .BuyB {
+	background-color:#FA740F;
+    border: 1px solid #eb4e00;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #cccccc;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    width: 175px;
+	cursor:pointer;
+}
+.Backhome {
+    background-color: #FFF3A5;
+    border: 1px solid #f2bc18;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #cccccc;
+    color: #f26500;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    width: 175px;
+}
+.viewhistory {
+    border-left: 1px dotted #dddddd;
+    float: left;
+    height: auto;
+    width: 184px;
+	margin-left:5px;
+	margin-top:5px;
+}
+
+.viewhistory .VHtitle {
+    border-bottom: 1px dotted #dddddd;
+    color: #cccccc;
+    display: block;
+    text-align: center;
+    width: 184px;
+	margin-top:8px;
+}
+.viewhistory .Fsulist {
+    height: auto;
+    overflow: hidden;
+    width: 185px;
+}
+.viewhistory .Fsulist li {
+    height: auto;
+    margin: 5px;
+    overflow: hidden;
+    width: 175px;
+}
+.viewhistory .Fsulist li img {
+    height: 123px;
+    width: 175px;
+}
+.viewhistory .Fsulist li p {
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    width: auto;
+}
+.introduction{
+	width:900px;
+	border:1px solid #dddddd;
+	overflow:hidden;
+	float:left;
+}
+.int-hearder{
+	height:46px;
+	border-top:2px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	position:relative;
+}
+.int-hearder ul li{
+	line-height:40px;
+	float:left;
+	margin:2px 0px;
+	width:120px;
+	font-weight:bolder;
+	cursor:pointer;
+	text-align:center;
+}
+.int-hearder ul li.liColor{
+	color:#FF6600;
+}
+.xiahuaxian{
+	border-bottom:3px solid #FF6600;
+	width:120px;
+	position:absolute;
+	top:42px;
+	left:0px;
+}
+.int-cont{
+	padding:25px 8px 8px 8px;
+	display:none;
+}
+.int-show{
+	display:block;
+}
+.int-cont h5{
+	line-height:35px;
+	border-bottom:1px solid #dddddd;
+}
+.int-cont h5 span{
+	float:right;
+}
+.pingjia{
+	float:left;
+	width:750px;
+}
+.int-cont p{
+	line-height:23px;
+}
+.people{
+	float:right;
+	padding-top:25px;
+	padding-right:0px;
+	font-weight:bolder;
+}
+.pcon{
+	border-bottom:1px dotted #dddddd;
+	overflow:hidden;
+}
+.fpage{
+	width:900px;
+	margin:10px auto 3px;
+	text-align:center;
+}
+.fpage a {
+	padding:5px 15px;
+	border:1px solid #DDDDDD;
+}
+.fpage a:hover{
+	color:#000;
+}
+.fpage a.one b{
+	border-bottom: 5px solid #ffffff;
+    border-right: 5px solid #d8d8d8;
+    border-top: 5px solid #ffffff;
+	display:inline-block;
+	margin-right:5px;
+}
+.fpage a.two b{
+	border-bottom: 5px solid #ffffff;
+    border-left: 5px solid #d8d8d8;
+    border-top: 5px solid #ffffff;
+	display:inline-block;
+	margin-left:5px;
+}
+/***************尾部分页结束*************/
+.int-cont table th,td{
+	width:220px;
+	text-align:center;
+	height:30px;
+	border-bottom:1px solid #dddddd;
+}
+.int-cont table td{
+	border-bottom:1px dotted #dddddd;
+}
+.adv{
+	float:right;
+}
+ 
