@@ -12,6 +12,7 @@ use Yii;
 use backend\models\BooksForm;
 use backend\models\Book;
 use yii\web\UploadedFile;
+use yii\data\Pagination;
 
 class BooksController extends Controller{
 
@@ -28,9 +29,9 @@ class BooksController extends Controller{
             $add->b_count=$model->count;
             $add->b_price=$model->price;
             $add->b_describe=$model->describe;
-            $add->b_image= Yii::$app->basePath .'/../image/'.$model->image->baseName .'.'.$model->image->extension;
+            $add->b_image= '\\'.$model->image->baseName .'.'.$model->image->extension;
             $add->save();
-            if ($add->save()) {
+            if ($add->save() && $model->upload()) {
                 Yii::$app->getSession()->setFlash('success', '保存成功');
                 return $this->redirect('index.php?r=books/add');
             } else {
@@ -45,18 +46,55 @@ class BooksController extends Controller{
 
     public function actionShow(){
 
+        $query= Book::find();
 
-        return $this->render('show');
+        $pagination = new Pagination([
+            'defaultPageSize' => 9,
+            'totalCount' => $query->count(),
+        ]);
+        $result=$query->select(['b_id','b_seller','b_count','b_name','b_class','b_price','b_image','b_describe'])
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->asArray()
+            ->all();
+
+
+        return $this->render('show',['result'=>$result,'pagination'=>$pagination]);
     }
       //修改书本
     public function actionModify(){
 
-        $result=Book::find()
 
-        ;
+        $result=Book::find();
+        $id=Yii::$app->request->get('b_id');
+        $query1=$result->where(['b_id'=>$id])
+            ->asArray()
+            ->one();
+        $query=Book::findOne(['b_id'=>$id]);
 
+        $model=new Booksform;
+        $load=$model->load(Yii::$app->request->post());
+        if($load){
+            $model->image=UploadedFile::getInstance($model,'image');
+            $query->b_seller=$model->seller;
+            $query->b_name=$model->name;
+            $query->b_class=$model->class;
+            $query->b_count=$model->count;
+            $query->b_price=$model->price;
+            $query->b_describe=$model->describe;
+            $query->b_image= '\\'.$model->image->baseName .'.'.$model->image->extension;
+            $query->save();
+            if ($query->save() && $model->upload()) {
+                Yii::$app->getSession()->setFlash('success', '保存成功');
+                return $this->redirect('index.php?r=books/show');
+            } else {
+                Yii::$app->getSession()->setFlash('error', '保存失败');
+            }
+        }else{
 
-        return $this->render('modify');
+            return $this->render('modify',['query'=>$query1,'model'=>$model]);
+        }
+
 
     }
 

@@ -34,7 +34,8 @@ class BooksForm extends Model{
 
          if($this->validate()){
              if($this->image){
-                 $this->image->saveAs(\Yii::$app->basePath .'/../image/'.$this->image->baseName .'.'.$this->image->extension);
+                 $name=iconv('UTF-8', 'gbk', $this->image->baseName);
+                 $this->image->saveAs(\Yii::$app->basePath .'/../image/'.$name .'.'.$this->image->extension);
              }
              return true;
          }else{

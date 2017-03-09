@@ -73,7 +73,7 @@
                     <td align=middle width=30><img height=9
                                                    src="<?php echo Yii::$app->request->baseUrl; ?>/img/menu_icon.gif" width=9></td>
                     <td><a class=menuchild
-                           href="/0901/food/index.php/Admin/Food/showfood"
+                           href="<?php echo Yii::$app->urlManager->createUrl('books/show'); ?>"
                            target=right>所有书本</a></td></tr>
                 <tr height=20>
                     <td align=middle width=30><img height=9
@@ -81,12 +81,12 @@
                     <td><a class=menuchild
                            href="<?php echo Yii::$app->urlManager->createUrl('books/add');?>"
                            target=right>添加书本</a></td></tr>
-                <tr height=20>
-                    <td align=middle width=30><img height=9
-                                                   src="<?php echo Yii::$app->request->baseUrl; ?>/img/menu_icon.gif" width=9></td>
-                    <td><a class=menuchild
-                           href="/0901/food/index.php/Admin/Food/showfood"
-                           target=right>修改书本</a></td></tr>
+<!--                <tr height=20>-->
+<!--                    <td align=middle width=30><img height=9-->
+<!--                                                   src="--><?php //echo Yii::$app->request->baseUrl; ?><!--/img/menu_icon.gif" width=9></td>-->
+<!--                    <td><a class=menuchild-->
+<!--                           href="/0901/food/index.php/Admin/Food/showfood"-->
+<!--                           target=right>修改书本</a></td></tr>-->
 
                 <tr height=4>
                     <td colspan=2></td></tr></table>
