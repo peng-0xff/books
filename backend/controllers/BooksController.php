@@ -94,8 +94,14 @@ class BooksController extends Controller{
 
             return $this->render('modify',['query'=>$query1,'model'=>$model]);
         }
+    }
 
+    public function actionDelete(){
 
+        $request = \Yii::$app->request->get('d');
+        $query=Book::find()->where(['b_id'=>$request])->one();
+        $query->delete();
+        return $this->redirect('index.php?r=books/show');
     }
 
 }

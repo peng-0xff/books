@@ -21,7 +21,7 @@ use yii\widgets\ActiveForm;
             <span>
                 <span style="float:left">当前位置是：仓库管理-》添加书本</span>
                 <span style="float:right;margin-right: 8px;font-weight: bold">
-                    <a style="text-decoration: none" href="/0901/food/index.php/Admin/Food/showfood">【返回】</a>
+                    <a style="text-decoration: none" href="<?php echo Yii::$app->urlManager->createUrl('books/show'); ?>">【返回】</a>
                 </span>
             </span>
 </div>
